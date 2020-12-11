@@ -16,5 +16,32 @@ namespace appcsharp
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnome_TextChanged(object sender, EventArgs e)
+        {
+            
+            // select * from agendaVisita where nome = txtnome;
+            
+        }
     }
 }
