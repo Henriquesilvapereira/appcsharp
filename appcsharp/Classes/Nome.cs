@@ -16,7 +16,6 @@ namespace appcsharp.Classes
             this.email = email;
             this.telefone = telefone;
             this.empresa = empresa;
-            Ativo = ativo;
         }
         //Propriedades
         public int id { get; set; }
@@ -24,6 +23,15 @@ namespace appcsharp.Classes
         public string email { get; set; }
         public string telefone { get; set; }
         public string empresa { get; set; }
-        public bool Ativo { get; set; }
+    }
+    public List<Nome> ListNome()
+    {
+        List<Nome> lista = new List<Nome>();
+        var cmd = Banco.Abrir();
+        cmd.CommandType = System.Data.CommandType.Text;
+        cmd.CommandText = "Select * from Alunos";
+        var dr = cmd.BeginExecuteReader();
+        return lista;
+
     }
 }
