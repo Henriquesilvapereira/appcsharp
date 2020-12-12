@@ -24,7 +24,7 @@ namespace appcsharp.Classes
         public string telefone { get; set; }
         public string empresa { get; set; }
     }
-    public List<Nome> ListNome()
+    public List<Nome> ListarNome()
     {
         List<Nome> lista = new List<Nome>();
         var cmd = Banco.Abrir();
