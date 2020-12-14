@@ -42,8 +42,6 @@ namespace appcsharp
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
-            this.btnInserir = new System.Windows.Forms.Button();
-            this.btnexcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,7 +135,7 @@ namespace appcsharp
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(20, 166);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(631, 272);
+            this.dataGridView1.Size = new System.Drawing.Size(665, 272);
             this.dataGridView1.TabIndex = 10;
             // 
             // label5
@@ -154,35 +152,14 @@ namespace appcsharp
             // 
             this.txtid.Location = new System.Drawing.Point(20, 36);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(45, 20);
+            this.txtid.Size = new System.Drawing.Size(29, 20);
             this.txtid.TabIndex = 12;
-            // 
-            // btnInserir
-            // 
-            this.btnInserir.Location = new System.Drawing.Point(708, 272);
-            this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(75, 29);
-            this.btnInserir.TabIndex = 13;
-            this.btnInserir.Text = "Inserir";
-            this.btnInserir.UseVisualStyleBackColor = true;
-            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
-            // 
-            // btnexcluir
-            // 
-            this.btnexcluir.Location = new System.Drawing.Point(708, 230);
-            this.btnexcluir.Name = "btnexcluir";
-            this.btnexcluir.Size = new System.Drawing.Size(77, 26);
-            this.btnexcluir.TabIndex = 14;
-            this.btnexcluir.Text = "Excluir";
-            this.btnexcluir.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnexcluir);
-            this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView1);
@@ -220,8 +197,6 @@ namespace appcsharp
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtid;
-        private System.Windows.Forms.Button btnInserir;
-        private System.Windows.Forms.Button btnexcluir;
     }
 }
 
