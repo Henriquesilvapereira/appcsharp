@@ -7,31 +7,41 @@ using appcsharp.Classes;
 
 namespace appcsharp.Classes
 {
-    public class Nome
+    public class Agenda
     { //Metodo Construtor
-        public Nome(int id=0, string nome=null, string email=null, string telefone=null, string empresa=null, bool ativo=false)
+       
+        public Agenda(int id = 0, string nome = null, string email = null, string telefone = null, string empresa = null, String diaVisita = null, string horarioVisita = null, string assunto = null, string descricao = null)
         {
-            this.id = id;
-            this.nome = nome;
-            this.email = email;
-            this.telefone = telefone;
-            this.empresa = empresa;
+            Id = id;
+            Nome = nome;
+            Email = email;
+            Telefone = telefone;
+            Empresa = empresa;
+            DiaVisita = diaVisita;
+            HorarioVisita = horarioVisita;
+            Assunto = assunto;
+            Descricao = descricao;
         }
         //Propriedades
-        public int id { get; set; }
-        public string nome { get; set; }
-        public string email { get; set; }
-        public string telefone { get; set; }
-        public string empresa { get; set; }
-    }
-    public List<Nome> ListarNome()
-    {
-        List<Nome> lista = new List<Nome>();
-        var cmd = Banco.Abrir();
-        cmd.CommandType = System.Data.CommandType.Text;
-        cmd.CommandText = "Select * from Alunos";
-        var dr = cmd.BeginExecuteReader();
-        return lista;
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Empresa { get; set; }
+        public string Email { get; set; }
+        public string Telefone { get; set; }
+        public string DiaVisita { get; set; }
+        public string HorarioVisita { get; set; }
+        public string Assunto { get; set; }
+        public string Descricao { get; set; }
+        public List<Agenda> ListarAgenda()
+        {
+            List<Agenda> lista = new List<Agenda>();
+            var cmd = Banco.Abrir();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "Select * from AgendaVisita";
+            var dr = cmd.BeginExecuteReader();
+            return lista;
 
+        }
     }
+
 }

@@ -43,5 +43,15 @@ namespace appcsharp
             // select * from agendaVisita where nome = txtnome;
             
         }
+
+        private void btnlist_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
