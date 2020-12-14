@@ -1,4 +1,5 @@
-﻿using System;
+﻿using appcsharp.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,12 +47,23 @@ namespace appcsharp
 
         private void btnlist_Click(object sender, EventArgs e)
         {
-
+            lstLista.Items.Clear();
+            Agenda agenda = new Agenda();
+            var lista = agenda.ListarAgenda();
+            foreach (var item in lista) 
+            {
+                lstLista.Items.Add(item.Nome + "-" +item.Empresa);
+            }
         }
 
         private void btnInserir_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

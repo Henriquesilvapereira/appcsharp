@@ -39,10 +39,9 @@ namespace appcsharp
             this.label4 = new System.Windows.Forms.Label();
             this.txttel = new System.Windows.Forms.TextBox();
             this.btnlist = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lstLista = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnfech
@@ -130,14 +129,6 @@ namespace appcsharp
             this.btnlist.UseVisualStyleBackColor = true;
             this.btnlist.Click += new System.EventHandler(this.btnlist_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 166);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(665, 272);
-            this.dataGridView1.TabIndex = 10;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -155,14 +146,23 @@ namespace appcsharp
             this.txtid.Size = new System.Drawing.Size(29, 20);
             this.txtid.TabIndex = 12;
             // 
+            // lstLista
+            // 
+            this.lstLista.FormattingEnabled = true;
+            this.lstLista.Location = new System.Drawing.Point(19, 188);
+            this.lstLista.Name = "lstLista";
+            this.lstLista.Size = new System.Drawing.Size(669, 238);
+            this.lstLista.TabIndex = 13;
+            this.lstLista.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstLista);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnlist);
             this.Controls.Add(this.txtvis);
             this.Controls.Add(this.txttel);
@@ -176,7 +176,6 @@ namespace appcsharp
             this.Name = "Form1";
             this.Text = "Contatos";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,9 +193,9 @@ namespace appcsharp
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txttel;
         private System.Windows.Forms.Button btnlist;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.ListBox lstLista;
     }
 }
 

@@ -38,7 +38,20 @@ namespace appcsharp.Classes
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = "Select * from AgendaVisita";
-            var dr = cmd.BeginExecuteReader();
+            var dr = cmd.ExecuteReader();
+            while (dr.Read()) 
+            {
+                lista.Add(new Agenda(
+                    Convert.ToInt32(dr.GetValue(0)),
+                    dr.GetString(1),
+                    dr.GetString(2),
+                    dr.GetString(3),
+                    dr.GetString(4),
+                    dr.GetString(5),
+                    dr.GetString(6),
+                    dr.GetString(7)
+                    ));
+            }
             return lista;
 
         }
