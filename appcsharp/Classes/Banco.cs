@@ -12,7 +12,7 @@ namespace appcsharp.Classes
         public static MySqlCommand Abrir() 
         {
             MySqlCommand cmd = new MySqlCommand();
-            string strCon = @"server=softkleen.com.br;database=wellington_fcinco;user id =fcincoon; passoword=bm*5rN60 ";
+            string strCon = @"server=softkleen.com.br;database=wellington_fcinco;user id =fcincoon; password=bm*5rN60 ";
             MySqlConnection cn = new MySqlConnection(strCon);
             cn.Open();
             cmd.Connection = cn;

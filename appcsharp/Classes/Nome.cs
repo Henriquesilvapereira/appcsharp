@@ -37,7 +37,7 @@ namespace appcsharp.Classes
             List<Agenda> lista = new List<Agenda>();
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "Select * from AgendaVisita";
+            cmd.CommandText = "Select * from agendaVisita";
             var dr = cmd.ExecuteReader();
             while (dr.Read()) 
             {
