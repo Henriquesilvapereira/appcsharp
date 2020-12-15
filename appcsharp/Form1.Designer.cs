@@ -52,6 +52,7 @@ namespace appcsharp
             this.btnfech.TabIndex = 0;
             this.btnfech.Text = "Fechar";
             this.btnfech.UseVisualStyleBackColor = true;
+            this.btnfech.Click += new System.EventHandler(this.btnfech_Click);
             // 
             // label1
             // 

@@ -52,7 +52,7 @@ namespace appcsharp
             var lista = agenda.ListarAgenda();
             foreach (var item in lista) 
             {
-                lstLista.Items.Add(item.Nome + "-" +item.Empresa);
+                lstLista.Items.Add(item.Id + " | " + item.Nome + " | " +item.Empresa + " | " + item.Email + " | " + item.Telefone + " | " + item.DiaVisita + " | " + item.HorarioVisita + " | " + item.Assunto + " | " + item.Descricao);
             }
         }
 
@@ -64,6 +64,11 @@ namespace appcsharp
         private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnfech_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
