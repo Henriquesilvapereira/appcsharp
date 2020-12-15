@@ -150,9 +150,9 @@ namespace appcsharp
             // lstLista
             // 
             this.lstLista.FormattingEnabled = true;
-            this.lstLista.Location = new System.Drawing.Point(19, 188);
+            this.lstLista.Location = new System.Drawing.Point(19, 6);
             this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(669, 238);
+            this.lstLista.Size = new System.Drawing.Size(669, 420);
             this.lstLista.TabIndex = 13;
             this.lstLista.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
             // 
